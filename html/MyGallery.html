@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My gallery</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+    *{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left_container{
+  width: 320px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  color: rgb(90, 0, 90);
+}
+.right_container{
+  height: 400px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background-size: cover;
+  background-position: center;
+}
+.box1{
+  background-image: url("https://media.istockphoto.com/id/1205289672/photo/majestic-bright-sunrise-over-ocean.jpg?s=612x612&w=0&k=20&c=sG7YEXKCLRu0Rn5FpIEgbefuKkeNO1wuV634C9ZMyuU=");
+  grid-row: span 2;
+}
+.box2{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXK4TT9SN0VKN-ypPc3xXZJ5mKfUlx_udN7Q&s");
+  grid-column: span 2;
+}
+.box3{
+  background-image: url("https://images.pexels.com/photos/358457/pexels-photo-358457.jpeg?cs=srgb&dl=pexels-pixabay-358457.jpg&fm=jpg");
+  color: white;
+}
+.box4{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW9h4fU35Nb2lGTCcT-GS1pVkWd5gqV0yegw&s");
+  grid-row: span 2;
+  color: white;
+}
+.box5{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-PhIGN964f01uUtY9FFDd_a_cSENEfTa0rw&s");
+  grid-column: span 2;
+  color: white;
+}
+.box6{
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/021/966/760/small_2x/sandy-beach-with-blurry-blue-ocean-free-photo.jpg");
+  grid-row: span 2;
+}
+.box7{
+  background-image: url("https://plantsguru.com/cdn/shop/files/plantsguru-flowering-plants-rose-baby-pink.jpg?v=1735618031");
+  grid-column: span 2;
+  grid-row: span 2;
+}
+@media (max-width: 900px){
+  .container{
+    flex-direction: column;
+  }
+}
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="left_container">
+      <h2>My Gallary</h2>
+      <p>"Nature is the gentle reminder that life moves in cycles, that every sunrise brings new hope, and every sunset invites peace. The results of the leaves, the songs of the birds, a joy that no storm can take away."</p>
+    </div>
+    <div class="right_container">
+      <div class="box box1">sunrise</div>
+      <div class="box box2">ocean</div>
+      <div class="box box3">water fall</div>
+      <div class="box box4">mountain</div>
+      <div class="box box5">trees</div>
+      <div class="box box6">beach</div>
+      <div class="box box7">rose</div>
+    </div>
+  </div>
+</body>
+</html>
